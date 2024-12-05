@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SudBoh</title>
+    <meta name="author" content="Іваненко">
+    <meta name="description" content="Приклад сторінки з вертикально рухомими текстом та зображеннями">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .marquee {
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            position: relative;
+            background-color: #eaeaea;
+            border: 2px solid #ccc;
+            text-align: center;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .row-1 {
+            background-color: #ff7f7f;
+        }
+
+        .row-2 {
+            background-color: #7fbfff;
+        }
+
+        .row-3 {
+            background-color: #7fff7f;
+        }
+
+        .row-4 {
+            background-color: #000000;
+        }
+
+        .row-5 {
+            background-color: #bf7fff;
+        }
+
+        img {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Текст та рисунки коливаються -->
+    <div class="marquee row-1">
+        <marquee behavior="alternate" direction="up">Цей текст іде вгору та вниз</marquee>
+    </div>
+
+    <!-- Рисунки рухаються знизу догори -->
+    <div class="marquee row-2">
+        <marquee direction="up" scrollamount="5">
+            <img src="images/g1.gif" alt="Зображення 1">
+            <img src="images/g1.gif" alt="Зображення 2">
+            <img src="images/g1.gif" alt="Зображення 3">
+        </marquee>
+    </div>
+
+    <!-- Рисунки рухаються згори донизу із зупинкою -->
+    <div class="marquee row-3">
+        <marquee direction="down" behavior="scroll" scrollamount="5">
+            <img src="images/g2.gif" alt="Зображення 4">
+            <img src="images/g2.gif" alt="Зображення 5">
+            <img src="images/g2.gif" alt="Зображення 6">
+        </marquee>
+    </div>
+
+    <!-- Текст рухається з повільним режимом -->
+    <div class="marquee row-4">
+        <marquee direction="up" scrollamount="2">Текст з повільним режимом</marquee>
+    </div>
+
+    <!-- Текст рухається з швидким режимом -->
+    <div class="marquee row-5">
+        <marquee direction="down" scrollamount="10">Текст з швидким режимом</marquee>
+    </div>
+</body>
+</html>

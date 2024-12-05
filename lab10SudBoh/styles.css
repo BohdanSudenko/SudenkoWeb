@@ -1,0 +1,48 @@
+/* Фонове зображення сторінки */
+body {
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    font-style: italic; /* Стиль тексту */
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль абзаців */
+p {
+    text-align: justify; /* Вирівнювання тексту */
+    margin-left: 5%; /* Відступи ліворуч */
+    margin-right: 5%; /* Відступи праворуч */
+    text-indent: 2em; /* "Червоний рядок" */
+    font-size: 16px; /* Розмір тексту */
+}
+
+/* Стиль заголовків */
+h1 {
+    font-size: 36px;
+    font-weight: bold; /* Жирний текст */
+    text-align: center; /* Вирівнювання по центру */
+    color: #0044cc; /* Колір заголовка */
+    font-style: normal; /* Нормальний стиль */
+}
+
+/* Стиль для посилань */
+a:link {
+    color: green; /* Не відвідане посилання */
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkblue; /* Відвідане посилання */
+    text-decoration: none;
+}
+
+a:active {
+    color: blue; /* Активне посилання */
+    text-decoration: none;
+}
+
+a:hover {
+    color: red; /* При наведенні */
+    text-decoration: underline;
+}

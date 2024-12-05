@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої улюблені місця</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px auto;
+            padding: 0 10px;
+        }
+
+        .photo {
+            text-align: center;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .photo img {
+                display: block;
+                margin: 0 auto;
+                border: 3px solid #ccc;
+                border-radius: 5px;
+            }
+
+            .photo p {
+                margin: 10px 0 0;
+                font-size: 14px;
+                color: #555;
+            }
+    </style>
+</head>
+<body>
+    <h1>Місця в яких я хочу побувати</h1>
+    <div class="gallery">
+        <div class="photo">
+            <img src="images/park.jpg" alt="Нью-Йорк" width="300" height="200" border="3">
+            <p>Нью-Йорк</p>
+        </div>
+        <div class="photo">
+            <img src="images/kapri.jpg" alt="Капрі" width="300" height="200" border="3">
+            <p>Капрі</p>
+        </div>
+        <div class="photo">
+            <img src="images/ostr.jpg" alt="Сейшельські Острови" width="300" height="200" border="3">
+            <p>Сейшельські Острови</p>
+        </div>
+        <div class="photo">
+            <img src="images/niagara.jpg" alt="Ниагарский водопад" width="300" height="200" border="3">
+            <p>Ниагарский водопад</p>
+        </div>
+    </div>
+</body>
+</html>

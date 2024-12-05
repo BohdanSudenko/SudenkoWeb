@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Анкета</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #E0FFFF;
+        }
+
+        h2 {
+            color: red;
+            text-align: center;
+        }
+
+        table {
+            width: 60%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            border: 1px solid #000;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+        }
+
+        .buttons {
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+            button[type="reset"] {
+                background-color: #f44336;
+            }
+
+            button:hover {
+                opacity: 0.8;
+            }
+    </style>
+</head>
+<body>
+
+    <h2>Анкета</h2>
+
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <td>1. Прізвище</td>
+                <td><input type="text" name="surname" required></td>
+            </tr>
+            <tr>
+                <td>2. Ім'я, по батькові</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>3. Число і рік народження</td>
+                <td><input type="text" name="birthdate" required></td>
+            </tr>
+            <tr>
+                <td>4. Домашня адреса</td>
+                <td><input type="text" name="address" required></td>
+            </tr>
+            <tr>
+                <td>5. Місце навчання (роботи)</td>
+                <td><input type="text" name="place_of_study" required></td>
+            </tr>
+            <tr>
+                <td>6. Домашній (робочий) телефон</td>
+                <td><input type="tel" name="phone" required></td>
+            </tr>
+            <tr>
+                <td>7. E-mail</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td>8. Область наукових інтересів</td>
+                <td><textarea name="interests" rows="5" required></textarea></td>
+            </tr>
+        </table>
+
+        <div class="buttons">
+            <button type="submit">Надіслати дані</button>
+            <button type="reset">Відмінити введення</button>
+        </div>
+    </form>
+
+</body>
+</html>

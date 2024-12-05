@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Лабораторна робота 1">
+    <meta name="keywords" content="Ivanenko, Lab01, HTML, Programming">
+    <title>IvanenkoLab01-9</title>
+    <style>
+        body {
+            background-color: #F0E68C; /* Светло-жёлтый фон */
+            color: #2C3E50; /* Тёмно-синий текст */
+            font-family: "Verdana", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #FF6347; /* Ярко-красный заголовок */
+        }
+
+        p {
+            text-align: justify;
+            margin: 20px 15%;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .highlight {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            color: #8A2BE2; /* Фиолетовый выделенный текст */
+        }
+
+        pre {
+            background-color: #FAFAD2; /* Светло-жёлтый фон */
+            color: #8B0000; /* Тёмно-красный текст */
+            padding: 15px;
+            margin: 20px 15%;
+            border-radius: 10px;
+            font-family: "Courier New", monospace;
+            overflow-x: auto;
+            border: 1px solid #FFD700; /* Золотистая рамка */
+        }
+
+        #signature {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #6A5ACD; /* Средне-фиолетовый */
+        }
+
+        hr {
+            border: 1px solid #FF4500; /* Оранжево-красный */
+            width: 50%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Про себе</h1>
+
+    <hr>
+    <h1 align="Center"><img src="images/embl.jpg" alt="photo" width="20%" height="20%"></h1>
+    <p>
+        Мене звати <span class="highlight">Богдан</span>. Я студент третього курсу, який захоплюється
+        <span class="highlight">програмуванням</span> та інформаційними технологіями. Вільний час проводжу, у онлайн іграх та вивченні нової інформації у програмуванні
+    </p>
+    <p>
+        У майбутньому хочу стати професійним розробником програмного забезпечення. Моя ціль — працювати
+        в міжнародній компанії та створювати корисні продукти для користувачів усього світу.
+    </p>
+
+    <h1>Моє хобі</h1>
+    <hr>
+    <p>
+        Одним із головних моїх хобі є програмування. Я постійно вдосконалюю свої навички та
+        експериментую з різними мовами програмування.
+    </p>
+
+    <h2>Програмування [Python]</h2>
+    <hr>
+    <pre>
+def greet_user(name):
+    print(f"Hello, {name}! Welcome to the world of Python programming.")
+
+user_name = input("Enter your name: ")
+greet_user(user_name)
+    </pre>
+
+    <div id="signature">
+        Студент групи 301-ТН Суденко Б. О.
+    </div>
+</body>
+</html>

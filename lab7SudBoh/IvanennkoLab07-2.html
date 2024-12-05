@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Всі елементи форми</title>
+</head>
+<body>
+    <h2>Завдання: Створення форми з усіма елементами</h2>
+    <form action="#" method="post">
+        <label for="name">Ваше ім'я:</label>
+        <input type="text" id="name" name="name" maxlength="40" size="40" placeholder="Введіть ваше ім'я"><br><br>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" maxlength="20" size="20"><br><br>
+
+        <label>Ваша стать:</label><br>
+        <input type="radio" name="gender" value="male"> Чоловіча<br>
+        <input type="radio" name="gender" value="female"> Жіноча<br><br>
+
+        <label for="hobby">Ваші хобі:</label><br>
+        <input type="checkbox" name="hobby" value="sport"> Спорт<br>
+        <input type="checkbox" name="hobby" value="music"> Музика<br><br>
+
+        <label for="country">Виберіть країну:</label>
+        <select id="country" name="country">
+            <option value="ukraine">Україна</option>
+            <option value="poland">Польща</option>
+            <option value="germany">Німеччина</option>
+        </select><br><br>
+
+        <label for="comments">Коментарі:</label><br>
+        <textarea id="comments" name="comments" rows="5" cols="30"></textarea><br><br>
+
+        <input type="file" name="file"><br><br>
+
+        <button type="submit">Надіслати</button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>

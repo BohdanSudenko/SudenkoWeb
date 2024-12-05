@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sudboh4</title>
+    <meta name="author" content="Іваненко">
+    <meta name="description" content="Приклад сторінки з горизонтальними рядками тексту, який рухається">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            padding: 10px 0;
+            font-size: 18px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .row-1 {
+            background-color: #ff7f7f;
+        }
+
+        .row-2 {
+            background-color: #7fbfff;
+        }
+
+        .row-3 {
+            background-color: #7fff7f;
+        }
+
+        .row-4 {
+            background-color: #ffff7f;
+        }
+
+        .row-5 {
+            background-color: #bf7fff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Текст коливається з боку в бік -->
+    <div class="marquee row-1">
+        <marquee behavior="alternate">Цей текст коливається з боку в бік</marquee>
+    </div>
+
+    <!-- Текст пробігає справа наліво та з'являється знову -->
+    <div class="marquee row-2">
+        <marquee direction="right">Цей текст пробігає справа наліво</marquee>
+    </div>
+
+    <!-- Текст пробігає зліва направо та зупиняється -->
+    <div class="marquee row-3">
+        <marquee behavior="scroll" direction="left" scrollamount="10">Цей текст пробігає зліва направо та зупиняється</marquee>
+    </div>
+
+    <!-- Два рядки з різними режимами запізнення -->
+    <div class="marquee row-4">
+        <marquee behavior="scroll" scrollamount="5">Текст з повільним режимом</marquee>
+    </div>
+    <div class="marquee row-5">
+        <marquee behavior="scroll" scrollamount="15">Текст з швидким режимом</marquee>
+    </div>
+</body>
+</html>

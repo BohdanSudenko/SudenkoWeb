@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма замовлення товару</title>
+</head>
+<body>
+    <h2>Завдання: Заповнення замовлення на товар</h2>
+    <form action="#" method="post">
+        <label for="account_number">Номер банківського рахунку:</label>
+        <input type="text" id="account_number" name="account_number" maxlength="20" size="20"><br><br>
+
+        <label for="user_id">Особистий номер користувача:</label>
+        <input type="text" id="user_id" name="user_id" maxlength="20" size="20"><br><br>
+
+        <label for="products">Виберіть товари:</label><br>
+        <select id="products" name="products[]" multiple size="5">
+            <option value="item1">Товар 1</option>
+            <option value="item2">Товар 2</option>
+            <option value="item3">Товар 3</option>
+        </select><br><br>
+
+        <label>Вид оплати:</label><br>
+        <input type="radio" name="payment" value="cash"> Готівковий<br>
+        <input type="radio" name="payment" value="noncash"> Безготівковий<br><br>
+
+        <label>Додаткова інформація:</label><br>
+        <input type="checkbox" name="info[]" value="balance"> Залишки на рахунку<br>
+        <input type="checkbox" name="info[]" value="transactions"> Список останніх виплат<br><br>
+
+        <label for="comments">Коментарі:</label><br>
+        <textarea id="comments" name="comments" rows="6" cols="50"></textarea><br><br>
+
+        <button type="submit">Відправити</button>
+        <button type="reset">Очистити</button>
+    </form>
+</body>
+</html>
